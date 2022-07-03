@@ -1,0 +1,30 @@
+D:\data\workspace\Csharp\Winform\console_test\test\test\bin\Debug\netcoreapp3.1\test.exe
+D:\data\workspace\Csharp\Winform\console_test\test\test\bin\Debug\netcoreapp3.1\test.deps.json
+D:\data\workspace\Csharp\Winform\console_test\test\test\bin\Debug\netcoreapp3.1\test.runtimeconfig.json
+D:\data\workspace\Csharp\Winform\console_test\test\test\bin\Debug\netcoreapp3.1\test.runtimeconfig.dev.json
+D:\data\workspace\Csharp\Winform\console_test\test\test\bin\Debug\netcoreapp3.1\test.dll
+D:\data\workspace\Csharp\Winform\console_test\test\test\bin\Debug\netcoreapp3.1\test.pdb
+D:\data\workspace\Csharp\Winform\console_test\test\test\obj\Debug\netcoreapp3.1\test.csproj.AssemblyReference.cache
+D:\data\workspace\Csharp\Winform\console_test\test\test\obj\Debug\netcoreapp3.1\test.GeneratedMSBuildEditorConfig.editorconfig
+D:\data\workspace\Csharp\Winform\console_test\test\test\obj\Debug\netcoreapp3.1\test.AssemblyInfoInputs.cache
+D:\data\workspace\Csharp\Winform\console_test\test\test\obj\Debug\netcoreapp3.1\test.AssemblyInfo.cs
+D:\data\workspace\Csharp\Winform\console_test\test\test\obj\Debug\netcoreapp3.1\test.csproj.CoreCompileInputs.cache
+D:\data\workspace\Csharp\Winform\console_test\test\test\obj\Debug\netcoreapp3.1\test.dll
+D:\data\workspace\Csharp\Winform\console_test\test\test\obj\Debug\netcoreapp3.1\test.pdb
+D:\data\workspace\Csharp\Winform\console_test\test\test\obj\Debug\netcoreapp3.1\test.genruntimeconfig.cache
+D:\data\workspace\Csharp\Winform\console_test\test\test\obj\Debug\netcoreapp3.1\test.csproj.ResolveComReference.cache
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\bin\Debug\netcoreapp3.1\test.exe
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\bin\Debug\netcoreapp3.1\test.deps.json
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\bin\Debug\netcoreapp3.1\test.runtimeconfig.json
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\bin\Debug\netcoreapp3.1\test.runtimeconfig.dev.json
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\bin\Debug\netcoreapp3.1\test.dll
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\bin\Debug\netcoreapp3.1\test.pdb
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\obj\Debug\netcoreapp3.1\test.csproj.AssemblyReference.cache
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\obj\Debug\netcoreapp3.1\test.csproj.ResolveComReference.cache
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\obj\Debug\netcoreapp3.1\test.GeneratedMSBuildEditorConfig.editorconfig
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\obj\Debug\netcoreapp3.1\test.AssemblyInfoInputs.cache
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\obj\Debug\netcoreapp3.1\test.AssemblyInfo.cs
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\obj\Debug\netcoreapp3.1\test.csproj.CoreCompileInputs.cache
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\obj\Debug\netcoreapp3.1\test.dll
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\obj\Debug\netcoreapp3.1\test.pdb
+D:\codeworkplace\Visual Studio 2022\C#\console_test\test\test\obj\Debug\netcoreapp3.1\test.genruntimeconfig.cache
