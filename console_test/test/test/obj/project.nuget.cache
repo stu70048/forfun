@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "js7LOMFIQTHA/Ccn/UOB0nhs0MB4//88NaUZIHxSbj0DPs1XviNs+BoaEpIo19Jej1prPDzz2mgRLu68OJyWyA==",
+  "dgSpecHash": "FAnh3A3Ahf6oUgW87pj9wlBE/UW0v1jiJ6Z8YzlVdxavp+zs1z8yLQDjLVwZs844lsdwtPXnAWJcc1vDeQYlzg==",
   "success": true,
-  "projectFilePath": "D:\\codeworkplace\\Visual Studio 2022\\C#\\console_test\\test\\test\\test.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\data\\workspace\\Csharp\\Winform\\console_test\\test\\test\\test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kenny.HP.Tseng\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
   "logs": []
 }

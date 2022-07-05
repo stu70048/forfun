@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
@@ -18,38 +17,25 @@ namespace test
 			Console.WriteLine("{0:X}", a.BitsTo2Byte(1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0));
 			Console.WriteLine("{0:d}", (int)(60 * 10e6 / 10 / 10e3 / 2 - 1));
 			Console.WriteLine("{0:d}", (int)(10e3));
-			a.Send_Data("ooooooooo");
+
 			a.savebin();
 			a.readbin(out data);
 			Console.WriteLine("{0:x}", data);
 			Console.WriteLine(Encoding.UTF8.GetString(data));
-			//Console.WriteLine(Encoding.Default.GetString(data));
+
 			Console.WriteLine(BitConverter.ToString(data));
-			var c = new Person
-			{
-				Age = 20
-			};
-			c.doit();
-			List<Auction> acutions = new List<Auction>();
 
-			foreach (Auction aPart in acutions)
-			{
-				Console.WriteLine(aPart);
-			}
-
+            var c = new Person
+            {
+                Age = 20
+            };
             Console.WriteLine(c.Age.ToString());
 			var b = new Person();
 			Console.WriteLine(b.Age.ToString());
-			b.Age = 10;
-			Console.WriteLine(c.Age.ToString());
-			Console.WriteLine(BitConverter.ToString(c.EDID).Replace("-", ",").ToLower());
-			Console.WriteLine(c);
-			c.EDID = new byte[] { 0x00 };
-			Console.WriteLine(b);
-			b.EDID = new byte[] { 0x01,0x12,0x22};
-			Console.WriteLine(b);
-			Console.WriteLine(c.ToString());
-			//Console.WriteLine(c.EDID.ToString());
+			byte addr_offset=1;
+			addr_offset = (byte)((addr_offset << 1 )+1 );
+			Console.WriteLine("{0:X}", addr_offset);
+			Console.WriteLine("{0:X}", 0x50|addr_offset);
 		}
 
 		private byte Send_Data(string message)
@@ -119,7 +105,7 @@ namespace test
 		public bool savebin()
 		{
 			BinaryWriter bw;
-			string s = "I am happy";
+			string s = "I am happyfjoiajsoifjoifjoilkhqouYOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO";
 			try
 			{
 				bw = new BinaryWriter(new FileStream("mydata", FileMode.Create));
@@ -191,45 +177,6 @@ namespace test
 	}
 	public class Person
 	{
-		//public  int Age { get; set; } = 10;
-		private static int _age = 100;
-		private static byte[] _edid = { 0x11,0x12} ;
-		//salary 成員則是透過公用唯讀屬性存取
-		public int Age
-		{
-			get { return _age; }
-			set { _age = value; }
-		}
-		public byte[] EDID
-		{
-			get { return _edid; }
-			set { _edid = value; }
-		}
-		
-		public override string ToString()
-		{
-			return BitConverter.ToString(EDID).Replace("-", ",").ToLower();
-		}
-		
-		public void doit()
-		{
-			List<Auction> acutions = new List<Auction>();
-			acutions.Add(new Auction() { auctionID = "crank arm", quantity = 1234 });
-		}
-	}
-
-	public class Auction
-	{
-		public string auctionID { get; set; }
-		public string itemName { get; set; }
-		public string itemID { get; set; }
-		public string bid { get; set; }
-		public string buyout { get; set; }
-		public int quantity { get; set; }
-
-		public override string ToString()
-		{
-			return "ID: " + auctionID + "   Name: " + quantity;
-		}
+		public int Age { get; set; } = 10;
 	}
 }
