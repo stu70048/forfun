@@ -1,0 +1,87 @@
+## This file is a general .xdc for the Spartan Edge Accelerator board 
+## To use it in a project:
+## - uncomment the lines corresponding to used pins
+## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
+
+
+## Clock signal 125 MHz
+#
+set_property -dict { PACKAGE_PIN H4   IOSTANDARD LVCMOS33 } [get_ports { sys_clk }]; #IO_L22N_T3_AD7N_35 Sch=led4_b
+
+##RGB LEDs
+
+#set_property -dict { PACKAGE_PIN N11   IOSTANDARD LVCMOS33 } [get_ports { FPGA_RGB }]; #FPGA_RGB
+
+##LEDs
+
+set_property -dict { PACKAGE_PIN J1   IOSTANDARD LVCMOS33 } [get_ports { led[0] }]; 
+set_property -dict { PACKAGE_PIN A13   IOSTANDARD LVCMOS33 } [get_ports { led[1] }]; 
+
+##Buttons
+
+set_property -dict { PACKAGE_PIN C3   IOSTANDARD LVCMOS33 } [get_ports { btn[0] }]; #FPGA_IO10
+set_property -dict { PACKAGE_PIN M4   IOSTANDARD LVCMOS33 } [get_ports { btn[1] }]; #FPGA_IO11
+
+
+## jump I2C
+
+#set_property -dict { PACKAGE_PIN P12   IOSTANDARD LVCMOS33 } [get_ports { ar_scl }]; #FPGA_ESP_SCL
+#set_property -dict { PACKAGE_PIN P13   IOSTANDARD LVCMOS33 } [get_ports { ar_sda }]; #FPGA_ESP_SDA
+
+##HDMI Tx
+
+#set_property -dict { PACKAGE_PIN E4   IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_cec }]; #IO_L19N_T3_VREF_35 Sch=hdmi_tx_cec
+#set_property -dict { PACKAGE_PIN F4   IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_clk_n }]; #IO_L11N_T1_SRCC_35 Sch=hdmi_tx_clk_n
+#set_property -dict { PACKAGE_PIN G4   IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_clk_p }]; #IO_L11P_T1_SRCC_35 Sch=hdmi_tx_clk_p
+#set_property -dict { PACKAGE_PIN F1   IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_d_n[0] }]; #IO_L12N_T1_MRCC_35 Sch=hdmi_tx_d_n[0]
+#set_property -dict { PACKAGE_PIN G1   IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_d_p[0] }]; #IO_L12P_T1_MRCC_35 Sch=hdmi_tx_d_p[0]
+#set_property -dict { PACKAGE_PIN D2   IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_d_n[1] }]; #IO_L10N_T1_AD11N_35 Sch=hdmi_tx_d_n[1]
+#set_property -dict { PACKAGE_PIN E2   IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_d_p[1] }]; #IO_L10P_T1_AD11P_35 Sch=hdmi_tx_d_p[1]
+#set_property -dict { PACKAGE_PIN C1   IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_d_n[2] }]; #IO_L14N_T2_AD4N_SRCC_35 Sch=hdmi_tx_d_n[2]
+#set_property -dict { PACKAGE_PIN D1   IOSTANDARD TMDS_33  } [get_ports { hdmi_tx_d_p[2] }]; #IO_L14P_T2_AD4P_SRCC_35 Sch=hdmi_tx_d_p[2]
+#set_property -dict { PACKAGE_PIN D4   IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_hpdn }]; #IO_0_34 Sch=hdmi_tx_hpdn
+
+##FPGA I/O 
+
+#set_property -dict { PACKAGE_PIN N14   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[0] }]; 
+#set_property -dict { PACKAGE_PIN M14   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[1] }]; 
+#set_property -dict { PACKAGE_PIN C4   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[2] }]; 
+#set_property -dict { PACKAGE_PIN B13   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[3] }]; 
+#set_property -dict { PACKAGE_PIN N10   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[4] }]; 
+#set_property -dict { PACKAGE_PIN M10   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[5] }]; 
+#set_property -dict { PACKAGE_PIN B14   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[6] }]; 
+#set_property -dict { PACKAGE_PIN D3   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[7] }]; 
+#set_property -dict { PACKAGE_PIN P5   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[8] }]; 
+#set_property -dict { PACKAGE_PIN E11   IOSTANDARD LVCMOS33 } [get_ports { FPGA_IO[9] }]; 
+
+
+
+##Audio 
+
+##Arduino Digital I/O 
+
+#set_property -dict { PACKAGE_PIN A12   IOSTANDARD LVCMOS33 } [get_ports { ar[0] }]; #FPGA_AR_D0/RX
+#set_property -dict { PACKAGE_PIN C12   IOSTANDARD LVCMOS33 } [get_ports { ar[1] }]; #FPGA_AR_D1/TX
+#set_property -dict { PACKAGE_PIN A10   IOSTANDARD LVCMOS33 } [get_ports { ar[2] }]; #FPGA_AR_D2
+#set_property -dict { PACKAGE_PIN B6   IOSTANDARD LVCMOS33 } [get_ports { ar[3] }]; #FPGA_AR_D3
+#set_property -dict { PACKAGE_PIN A5   IOSTANDARD LVCMOS33 } [get_ports { ar[4] }]; #FPGA_AR_D4
+#set_property -dict { PACKAGE_PIN B5   IOSTANDARD LVCMOS33 } [get_ports { ar[5] }]; #FPGA_AR_D5
+#set_property -dict { PACKAGE_PIN A4   IOSTANDARD LVCMOS33 } [get_ports { ar[6] }]; #FPGA_AR_D6
+#set_property -dict { PACKAGE_PIN A3   IOSTANDARD LVCMOS33 } [get_ports { ar[7] }]; #FPGA_AR_D7
+#set_property -dict { PACKAGE_PIN B3   IOSTANDARD LVCMOS33 } [get_ports { ar[8] }]; #FPGA_AR_D8
+#set_property -dict { PACKAGE_PIN A2   IOSTANDARD LVCMOS33 } [get_ports { ar[9] }]; #FPGA_AR_D9
+#set_property -dict { PACKAGE_PIN B2   IOSTANDARD LVCMOS33 } [get_ports { ar[10] }]; #FPGA_AR_D10
+#set_property -dict { PACKAGE_PIN B1   IOSTANDARD LVCMOS33 } [get_ports { ar[11] }]; #FPGA_AR_D11
+#set_property -dict { PACKAGE_PIN H1   IOSTANDARD LVCMOS33 } [get_ports { ar[12] }]; #FPGA_AR_D12
+#set_property -dict { PACKAGE_PIN H2   IOSTANDARD LVCMOS33 } [get_ports { ar[13] }]; #FPGA_AR_D13
+#set_property -dict { PACKAGE_PIN Y13   IOSTANDARD LVCMOS33 } [get_ports { a }]; #FPGA_AR_Vref
+
+##Arduino analog I/O 
+
+
+#set_property -dict { PACKAGE_PIN Y11   IOSTANDARD LVCMOS33 } [get_ports { a[0] }]; #IO_L18N_T2_13 Sch=a[0]
+#set_property -dict { PACKAGE_PIN Y12   IOSTANDARD LVCMOS33 } [get_ports { a[1] }]; #IO_L20P_T3_13 Sch=a[1]
+#set_property -dict { PACKAGE_PIN W11   IOSTANDARD LVCMOS33 } [get_ports { a[2] }]; #IO_L18P_T2_13 Sch=a[2]
+#set_property -dict { PACKAGE_PIN V11   IOSTANDARD LVCMOS33 } [get_ports { a[3] }]; #IO_L21P_T3_DQS_13 Sch=a[3]
+#set_property -dict { PACKAGE_PIN T5    IOSTANDARD LVCMOS33 } [get_ports { a[4] }]; #IO_L19P_T3_13 Sch=a[4]
+#set_property -dict { PACKAGE_PIN U10   IOSTANDARD LVCMOS33 } [get_ports { a[5] }]; #IO_L12N_T1_MRCC_13 Sch=a[5]

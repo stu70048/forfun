@@ -2,16 +2,22 @@
 
 module test2(
         input sys_clk,
-        input [1:0]key,
-        output reg led_l1_l2
+        input [1:0]btn,
+        output reg [1:0]led
     );
 
 
-wire flag = key[0] & key[1];
+wire wire_led1 = btn[0] & btn[1];
+wire wire_led2 = btn[0] | btn[1];
 always @(posedge sys_clk)begin
-    if(flag)
-        led_l1_l2 <= 1'b1;
+    if(wire_led1)
+        led[0] <= 1'b1;
     else
-        led_l1_l2 <= 1'b0;
+        led[0] <= 1'b0;
+        
+    if(wire_led2)
+        led[1] <= 1'b1;
+    else
+        led[1] <= 1'b0; 
 end
 endmodule

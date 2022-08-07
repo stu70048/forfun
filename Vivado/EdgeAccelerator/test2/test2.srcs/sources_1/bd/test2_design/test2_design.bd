@@ -1,0 +1,15 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7s15ftgb196-1",
+      "gen_directory": "../../../../test2.gen/sources_1/bd/test2_design",
+      "name": "test2_design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2022.1.1",
+      "validated": "true"
+    },
+    "design_tree": {}
+  }
+}
