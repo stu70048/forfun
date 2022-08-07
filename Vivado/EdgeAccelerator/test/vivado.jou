@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1.1 (64-bit)
+# SW Build 3557992 on Fri Jun  3 09:58:00 MDT 2022
+# IP Build 3556342 on Fri Jun  3 19:31:36 MDT 2022
+# Start of session at: Mon Aug  1 20:55:30 2022
+# Process ID: 3116
+# Current directory: D:/codeworkplace/Vivado/EdgeAccelerator/test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11948 D:\codeworkplace\Vivado\EdgeAccelerator\test\test.xpr
+# Log file: D:/codeworkplace/Vivado/EdgeAccelerator/test/vivado.log
+# Journal file: D:/codeworkplace/Vivado/EdgeAccelerator/test\vivado.jou
+# Running On: DESKTOP-FG9SUD2, OS: Windows, CPU Frequency: 3610 MHz, CPU Physical cores: 12, Host memory: 68448 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/codeworkplace/Vivado/EdgeAccelerator/test/test.xpr
+update_compile_order -fileset sources_1
