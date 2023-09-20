@@ -4,19 +4,18 @@
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
 #  Clock signal 100 MHz
-#set_property -dict { PACKAGE_PIN H4   IOSTANDARD LVCMOS33 } [get_ports { sys_clk }]; #IO_L22N_T3_AD7N_35 Sch=led4_b
-#create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports { sys_clk }];
-
+set_property -dict { PACKAGE_PIN H4   IOSTANDARD LVCMOS33 } [get_ports { sys_clk }]; #IO_L22N_T3_AD7N_35 Sch=led4_b
+create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports { sys_clk }];
 # RGB LEDs
 #set_property -dict { PACKAGE_PIN N11   IOSTANDARD LVCMOS33 } [get_ports { FPGA_RGB }]; #FPGA_RGB
 
 # LEDs
-#set_property -dict { PACKAGE_PIN J1   IOSTANDARD LVCMOS33 } [get_ports { led[0] }];  # yellow, near blue connecter
-#set_property -dict { PACKAGE_PIN A13   IOSTANDARD LVCMOS33 } [get_ports { led[1] }]; # red
+set_property -dict { PACKAGE_PIN J1   IOSTANDARD LVCMOS33 } [get_ports { led[0] }];  # yellow, near blue connecter
+set_property -dict { PACKAGE_PIN A13   IOSTANDARD LVCMOS33 } [get_ports { led[1] }]; # red
 
 # Buttons
-#set_property -dict { PACKAGE_PIN C3   IOSTANDARD LVCMOS33 } [get_ports { btn[0] }]; #FPGA_IO10 user1
-#set_property -dict { PACKAGE_PIN M4   IOSTANDARD LVCMOS33 } [get_ports { btn[1] }]; #FPGA_IO11 user2
+set_property -dict { PACKAGE_PIN C3   IOSTANDARD LVCMOS33 } [get_ports { btn[0] }]; #FPGA_IO10 user1
+set_property -dict { PACKAGE_PIN M4   IOSTANDARD LVCMOS33 } [get_ports { btn[1] }]; #FPGA_IO11 user2
 
 # jump I2C
 #set_property -dict { PACKAGE_PIN P12   IOSTANDARD LVCMOS33 } [get_ports { ar_scl }]; #FPGA_ESP_SCL

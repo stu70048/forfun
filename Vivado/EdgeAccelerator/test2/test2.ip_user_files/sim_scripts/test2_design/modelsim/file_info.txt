@@ -1,2 +1,0 @@
-test2_design.v,verilog,xil_defaultlib,../../../bd/test2_design/sim/test2_design.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
